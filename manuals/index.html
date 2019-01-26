@@ -104,7 +104,7 @@
 };
 
 document.getElementById('title').innerText = getUrlParameter('brand').length>0?getUrlParameter('brand') + " Instruction Manuals" : "Access Product Manuals";
-document.getElementById('product-manual-search').innerText = getUrlParameter('brand');
+document.getElementById('product-manual-search').value = getUrlParameter('brand');
 
 
 </script>
