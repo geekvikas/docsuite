@@ -1,0 +1,44 @@
+body { margin: 0; padding: 0; font-family: 'Roboto Condensed', sans-serif;  font-size: 15px; }
+
+.clear { clear: both; }
+.container { max-width: 96%; width: 1000px; margin: 0 auto; }
+.radius { -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; }
+.radius-small { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+#banner-container { border-bottom: 1px solid #b0b0b0; }
+    #banner { padding: 10px 0; }
+    #banner h1 { height: 66px; margin: 0 auto; padding: 0; text-indent: -20000px; background: url(logo.png) center center no-repeat; }
+
+#top-container { background: #fff; }
+#top { }
+        
+    #intro { padding: 30px 0; color: #616262; }
+    #intro h1 { font-size: 28px; font-weight: normal; margin: 0; padding: 0 0 20px 0; color: #52bb87; }
+    #intro input { border: 1px solid #dfdfdf; color: #555555; padding: 15px 0; font-size: 14px; width: 100%; margin: 0 0 20px 0; text-indent: 15px; }
+    #intro button { width: 100%; font-size: 20px; background: #f58220; border: solid #ca6c18; color: #fff; 
+            border-width: 1px 1px 6px 1px; padding: 15px 10px;  }
+    #intro button:hover { background: #ff5200; border: solid #df4800; border-width: 1px 1px 6px 1px; cursor: pointer; }
+    
+    .alphalinks { padding: 20px 0; text-align: center; }
+    a.alphalink { padding: 5px 10px; display: inline-block; text-decoration: none; background: #52bb87; color: #fff; }
+    a.alphalink.current, a.alphalink:hover { background: #616262; }
+    .results { padding: 20px 0 30px 0; text-align: center; }
+    .results h1 { text-align: center; }
+    .resultslink { display: inline-block; width: 31%; margin: 1%; padding: 10px 0; text-align: center; color: #616262; border: 1px solid #b7b7b7; text-decoration: none;  background: #fcfcfc; }
+    .resultslink:hover { background: #52bb87; color: #fff; }
+    
+    
+#main-area-container { background: #d4eaf5; }   
+    #main-area { padding: 40px 0; }
+    .content { }
+        .content h3 { font-size: 25px; margin: 0; padding: 0 0 50px 0; color: #4f4f4f; text-align: center; }
+        .content .can-manual, .content .can-search, .content .can-download { width: 31%; float: left; padding: 140px 1% 50px 1%; text-align: center; font-size: 18px; }
+        .content .can-download { background: url(icon-manual.png) center 30px no-repeat; border-right: 1px solid #a8d0e1; }
+        .content .can-search { background: url(icon-search.png) center 30px no-repeat; border-right: 1px solid #a8d0e1; }
+        .content .can-manual { background: url(icon-consult.png) center 30px no-repeat; }
+  
+    
+#footer { color: #fff; text-align: center; padding: 20px 0; margin: 0; background: #636162; font-size: 11px; }
+#footer span { padding: 5px; }
+#footer a { color: #fff; padding: 0 5px; }
+#footer a:hover { color: #fff; text-decoration: none; }
