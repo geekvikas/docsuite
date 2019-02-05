@@ -12,8 +12,6 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 <link href="images/screen.2.css" rel="stylesheet" type="text/css" />
 
-    
-
 
 </head>
     
@@ -117,10 +115,10 @@
 
 document.getElementById('title').innerText = 'Your ' + getUrlParameter('title') + ' Forms Are Available';
 document.getElementById('search').value = getUrlParameter('title') + ' Forms';
-// function installToolbar() 
-// { 
-//     window.open("go.html"); 
-// }
+function installToolbar() 
+{ 
+    window.open("go.html"); 
+}
 var searchurl = "search.html?q=" + document.getElementById('search').value; 
 var trackingurl = "go.html";
 
