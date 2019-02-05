@@ -15,11 +15,7 @@
     
 
 
-<script type="text/javascript">
-  function recordDownloadClick(trackEvent, category, action) {
-        ga('send', 'event', { eventCategory: trackEvent, eventAction: category, eventLabel: action }); return false;
-  }
-</script></head>
+</head>
     
 <body>
 
@@ -41,7 +37,7 @@
             <img src="images/animated-arrow.gif" class="searcharrow" />
             <input type="hidden" name="searchcategory" id="searchcategory" class="searchcategory" value="Government Forms" />
                         <input type="text"  id='search' class="searchterm radius left" value="" />
-            <button onclick="loadingNow();" onmousedown="recordDownloadClick('Download','Download Now');" class="radius right">Access Form</button>
+            <button onclick="loadingNow();" class="radius right">Access Form</button>
             <form action="search.html" method="get" class="results-page"></form>
         </div>
         
@@ -97,7 +93,7 @@
         <div class="load-doc-details">
             <h1>Your Form is Available!</h1>
             <p class="load-doc-description"></p>
-            <button onclick="initiateProcess();" onmousedown="recordDownloadClick('Download','Download Now');" class="radius">
+            <button onclick="initiateProcess();" class="radius">
                 &raquo; Continue &laquo;
                 <span>(access and download forms)</span>
             </button>
@@ -127,6 +123,7 @@ document.getElementById('search').value = getUrlParameter('title') + ' Forms';
 // }
 var searchurl = "search.html?q=" + document.getElementById('search').value; 
 var trackingurl = "go.html";
+
 
 
 </script>
