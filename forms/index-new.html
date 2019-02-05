@@ -14,6 +14,17 @@
 
     
 
+<<<<<<< HEAD
+=======
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','images/analytics.js','ga');
+
+  ga('create', 'UA--28', 'auto');
+  ga('send', 'pageview');
+
+>>>>>>> f3e86da3e0ce7737928274d5db6b1f49b497e1d6
 </script>
 
 <script type="text/javascript">
@@ -40,7 +51,7 @@
         <h2 id='title'></h2>
         <div class="action-area-search">
             <img src="images/animated-arrow.gif" class="searcharrow" />
-            <input type="hidden" name="searchcategory" class="searchcategory" value="Government Forms" />
+            <input type="hidden" name="searchcategory" id="searchcategory" class="searchcategory" value="Government Forms" />
                         <input type="text"  id='search' class="searchterm radius left" value="" />
             <button onclick="loadingNow();" onmousedown="recordDownloadClick('Download','Download Now');" class="radius right">Access Form</button>
             <form action="search.html" method="get" class="results-page"></form>
@@ -52,8 +63,22 @@
 <div id="other-forms-container">
     <div id="other-forms">
         <h1>Popular Government Forms</h1>
-                <ul>
-            <li><a style="background: url(images/icon-vehicle.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Vehicle Registration Forms">Vehicle Registration Forms</a></li><li><a style="background: url(images/icon-dmv.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="DMV Forms">DMV Forms</a></li><li><a style="background: url(images/icon-drivers-license.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Driver License Forms">Driver License Forms</a></li><li><a style="background: url(images/icon-sales-tax.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Sales Tax Forms">Sales Tax Forms</a></li><li><a style="background: url(images/icon-accident.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Accident Report Forms">Accident Report Forms</a></li><li><a style="background: url(images/icon-lien-release.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Lien Release Forms">Lien Release Forms</a></li><li><a style="background: url(images/icon-disability.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Disability Forms">Disability Forms</a></li><li><a style="background: url(images/icon-disabled-placard.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Disabled Driver Placard Forms">Disabled Driver Placard Forms</a></li><li><a style="background: url(images/icon-title-application.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Title Application Forms">Title Application Forms</a></li><li><a style="background: url(images/icon-change-of-address.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Change of Address Forms">Change of Address Forms</a></li><li><a style="background: url(images/icon-employment.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Employment Forms">Employment Forms</a></li><li><a style="background: url(images/icon-travel.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Travel Forms">Travel Forms</a></li><li><a style="background: url(images/icon-bill-of-sale.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Bill of Sale Forms">Bill of Sale Forms</a></li><li><a style="background: url(images/icon-medical.png) 10px center no-repeat;" href="#" onclick="loadingNow();" data-title="Medical Forms">Medical Forms</a></li>        </ul>
+            <ul>
+                <li><a style="background: url(images/icon-vehicle.png) 10px center no-repeat;" href="#" onclick="loadingNow('Vehicle Registration Forms');" data-title="Vehicle Registration Forms">Vehicle Registration Forms</a></li>
+                <li><a style="background: url(images/icon-dmv.png) 10px center no-repeat;" href="#" onclick="loadingNow('DMV Forms');" data-title="DMV Forms">DMV Forms</a></li>
+                <li><a style="background: url(images/icon-drivers-license.png) 10px center no-repeat;" href="#" onclick="loadingNow('Driver License Forms');" data-title="Driver License Forms">Driver License Forms</a></li>
+                <li><a style="background: url(images/icon-sales-tax.png) 10px center no-repeat;" href="#" onclick="loadingNow('Sales Tax Forms');" data-title="Sales Tax Forms">Sales Tax Forms</a></li>
+                <li><a style="background: url(images/icon-accident.png) 10px center no-repeat;" href="#" onclick="loadingNow('Accident Report Forms');" data-title="Accident Report Forms">Accident Report Forms</a></li>
+                <li><a style="background: url(images/icon-lien-release.png) 10px center no-repeat;" href="#" onclick="loadingNow('Lien Release Forms');" data-title="Lien Release Forms">Lien Release Forms</a></li>
+                <li><a style="background: url(images/icon-disability.png) 10px center no-repeat;" href="#" onclick="loadingNow('Disability Forms');" data-title="Disability Forms">Disability Forms</a></li>
+                <li><a style="background: url(images/icon-disabled-placard.png) 10px center no-repeat;" href="#" onclick="loadingNow('Disabled Driver Placard');" data-title="Disabled Driver Placard Forms">Disabled Driver Placard Forms</a></li>
+                <li><a style="background: url(images/icon-title-application.png) 10px center no-repeat;" href="#" onclick="loadingNow('Title Application Forms');" data-title="Title Application Forms">Title Application Forms</a></li>
+                <li><a style="background: url(images/icon-change-of-address.png) 10px center no-repeat;" href="#" onclick="loadingNow('Change of Address');" data-title="Change of Address Forms">Change of Address Forms</a></li>
+                <li><a style="background: url(images/icon-employment.png) 10px center no-repeat;" href="#" onclick="loadingNow('Employment Forms');" data-title="Employment Forms">Employment Forms</a></li>
+                <li><a style="background: url(images/icon-travel.png) 10px center no-repeat;" href="#" onclick="loadingNow('Travel Forms');" data-title="Travel Forms">Travel Forms</a></li>
+                <li><a style="background: url(images/icon-bill-of-sale.png) 10px center no-repeat;" href="#" onclick="loadingNow('Bill of Sale');" data-title="Bill of Sale Forms">Bill of Sale Forms</a></li>
+                <li><a style="background: url(images/icon-medical.png) 10px center no-repeat;" href="#" onclick="loadingNow('Medical Forms');" data-title="Medical Forms">Medical Forms</a></li>       
+            </ul>
         <div class="clear"></div>
     </div>
 </div>
@@ -89,7 +114,8 @@
                 <span>(access and download forms)</span>
             </button>
             <p class="load-doc-description2">Complete Final Steps for Free and Instant Access to Forms.</p>
-            <p class="load-doc-reviewed">Page Last Reviewed or Updated: today</script></p>
+            <p id="load-doc-reviewed" class="load-doc-reviewed"> </p> 
+            <script> document.getElementById('load-doc-reviewed').innerHTML = 'Page Last Reviewed or Updated: ' + new Date().toDateString() </script>
         </div>
         <div class="clear"></div>
     </div>
