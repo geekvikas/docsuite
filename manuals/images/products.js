@@ -2,7 +2,9 @@ var product_db = [{"file":"index0000.html","product":"Magic Mobility"},{"file":"
 
 
 function findProd(prodName){
-    var result = product_db.filter(x=>x.product.toLowerCase()==prodName.toLowerCase());
+    var result = product_db.filter(function(x){
+       return x.product.toLowerCase()==prodName.toLowerCase(); 
+    });
     if (typeof result !== 'undefined' && result.length>0)
         return result[0].file;
     else
