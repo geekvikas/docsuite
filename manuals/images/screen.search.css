@@ -27,7 +27,15 @@ body { margin: 0; padding: 0; font-family: 'Roboto Condensed', sans-serif;  font
         #intro-action button { width: 100%; font-size: 20px; background: #f58220; border: solid #ca6c18; color: #fff; 
                  border-width: 1px 1px 6px 1px; padding: 15px 10px;  }
         #intro-action button:hover { background: #ff5200; border: solid #df4800; border-width: 1px 1px 6px 1px; cursor: pointer; }
-    .global-disclaimer { color: #555; padding: 0 0 10px 0; }
+
+
+        #intro-action-continue { width: 400px; left 140px no-repeat; 
+            float: right; position: relative; }
+            #intro-action-continue button { width: 100%; font-size: 20px; background: #f58220; border: solid #ca6c18; color: #fff; 
+                border-width: 1px 1px 6px 1px; padding: 15px 10px;  }
+       #intro-action-continue button:hover { background: #ff5200; border: solid #df4800; border-width: 1px 1px 6px 1px; cursor: pointer; }
+
+        .global-disclaimer { color: #555; padding: 0 0 10px 0; }
     .global-disclaimer a { color: #555; }
         
 #main-area-container { background: #d4eaf5; }   

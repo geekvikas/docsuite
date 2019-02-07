@@ -1,4 +1,4 @@
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -8,22 +8,18 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-<script type="text/javascript">function installToolbar() { window.open("go.html"); }var clickurl = "#";var trackingurl = "http://change_the_url_here";</script><link href="images/screen.search.css" rel="stylesheet" type="text/css" />
-
+<link href="images/screen.search.css" rel="stylesheet" type="text/css" />
+<link href="images/autocomplete.css" rel="stylesheet" type="text/css" />
+<script src='images/products.js'></script>
 
 <script>
-    function openInNewTab() {
+        function openInNewTab() {
         
         var win = window.open('https://www.google.com/search?q=' + document.getElementById('product-manual-search').value, '_blank');
         win.focus();
     }
 </script>
-
-<script type="text/javascript">
-  function recordDownloadClick(trackEvent, category, action) {
-        ga('send', 'event', { eventCategory: trackEvent, eventAction: category, eventLabel: action }); return false;
-  }
-</script></head>
+</head>
     
 <body>
 
@@ -51,11 +47,13 @@
     <div id="intro-action" >
                 <h1 id="title"></h1>
                 <form action="search.html" name="search-form" method="get" class="results-page">
-            <input type="text" name="product-manual-search" id="product-manual-search" class="radius-small" value="Enter Brand or Model # To Get Started" onclick="this.value='';" />
-        </form>
-        <button onclick="loadingNow();" onmousedown="recordDownloadClick('Download','Download Now');" class="radius-small">CONTINUE</button>    
+                    <input type="text" autocomplete="off" name="product-manual-search" id="product-manual-search" class="radius-small" value="Enter Brand or Model # To Get Started" onclick="this.value='';" />
+                </form>
         <!-- <button class="radius-small" onclick=openInNewTab() >CONTINUE</button> -->
     </div>  
+    <div id="intro-action-continue" >
+        <button onclick="loadingNow();" onmousedown="recordDownloadClick('Download','Download Now');" class="radius-small">CONTINUE</button>    
+    </div>
         
     <div class="clear" style="height: 80px;"></div>
     
@@ -96,8 +94,17 @@ document.getElementById('title').innerText = getUrlParameter('brand').length>0?g
 if(getUrlParameter('brand').length>0)
     document.getElementById('product-manual-search').value = getUrlParameter('brand');
 
+function installToolbar() 
+{ 
+    window.open("go.html"); 
+}
+
+var trackingurl = "go.html";
+
+
 
 </script>
+<script type="text/javascript" src="images/autocomplete.js"></script>
 <script type="text/javascript" src="images/footer.js"></script>
 <script type="text/javascript" src="images/jquery.min.js"></script>
 <script type="text/javascript" src="images/jquery.fancybox.min.js"></script>
