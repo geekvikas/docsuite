@@ -90,7 +90,7 @@
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-document.getElementById('title').innerText = getUrlParameter('brand').length>0?getUrlParameter('brand') + " Instruction Manuals" : "Access Product Manuals";
+document.getElementById('title').innerText = getUrlParameter('brand').length>0?getUrlParameter('brand') + " Manuals" : "Access Product Manuals";
 if(getUrlParameter('brand').length>0)
     document.getElementById('product-manual-search').value = getUrlParameter('brand');
 

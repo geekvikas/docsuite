@@ -20,7 +20,7 @@ body { margin: 0; padding: 0; font-family: 'Roboto Condensed', sans-serif;  font
                padding: 50px 15px 0 190px; min-height: 210px; }
         .colored { color: #52bb87; }
     #intro-action { width: 400px; background: url(down-arrow-blue.png) left 140px no-repeat; 
-                    float: right; padding: 240px 0 0 0; position: relative; }
+                    float: right; padding: 300px 0 0 0; position: relative; }
         #intro-action h1 { position: absolute; bottom: 255px; font-size: 28px; font-weight: bold; margin: 0; padding: 0; }
         #intro-action input { border: 1px solid #dfdfdf; color: #555555; padding: 15px 0; font-size: 14px; width: 100%; margin: 0 0 20px 0; text-indent: 15px; }
         .arrow-text { background: url(arrow-textbox.png) right center no-repeat; }
