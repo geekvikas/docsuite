@@ -1,0 +1,5 @@
+#intro .ad-top:before{content: "Please view search results below"}
+#intro .ad-top { text-align: center ; font-size: 28px; font-weight: normal; margin: 0; padding: 0 0 20px 0; color: #52bb87;  }
+
+#intro .errMsg:before{content: "Sorry, no matching manuals found. Please view others below"}
+#intro .errMsg { text-align: center ; font-size: 28px; font-weight: normal; margin: 0; padding: 0 0 20px 0; color: #ff0000;  }

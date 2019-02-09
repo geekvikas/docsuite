@@ -1,3 +1,4 @@
+
 body { margin: 0; padding: 0; font-family: 'Roboto Condensed', sans-serif;  font-size: 11px; }
 
 .clear { clear: both; }
@@ -12,18 +13,19 @@ body { margin: 0; padding: 0; font-family: 'Roboto Condensed', sans-serif;  font
 #top-container { background: #fff; }
 #top { }
         
-    #intro { padding: 50px 0 0 0; width: 50%; float: left; color: #616262; }
+        #intro { padding: 50px 0 0 0; width: 50%; float: left; color: #616262; }
+        
         #intro h2 { font-size: 24px; font-weight: normal; margin: 0; padding: 0 0 40px 0; color: #52bb87; }
         #intro button { background: #f28220; border: 1px solid #d26c12; color: #fff; padding: 20px 100px; text-align: center; 
                 font-size: 45px; font-weight: bold; transition: all 0.5s ease;}
         .free { font-size: 14px; background: url(icon-free.png) top left no-repeat; 
                padding: 50px 15px 0 190px; min-height: 210px; }
         .colored { color: #52bb87; }
-    #intro-action { width: 400px; background: url(down-arrow-blue.png) left 140px no-repeat; 
-                    float: right; padding: 300px 0 0 0; position: relative; }
-        #intro-action h1 { position: absolute; bottom: 255px; font-size: 28px; font-weight: bold; margin: 0; padding: 0; }
+        #intro-action { width: 400px; background: url(down-arrow-blue.png) left 150px no-repeat; 
+                    float: right; padding: 250px 0 0 0; position: relative; }
+        #intro-action h1 { position: absolute; bottom: 235px; font-size: 28px; font-weight: bold; margin: 0; padding: 0; }
         #intro-action input { border: 1px solid #dfdfdf; color: #555555; padding: 15px 0; font-size: 14px; width: 100%; margin: 0 0 20px 0; text-indent: 15px; }
-        .arrow-text { background: url(arrow-textbox.png) right center no-repeat; }
+        .arrow-text { background: url(arrow-textbox.png) right center no-repeat;  }
         #intro-action button { width: 100%; font-size: 20px; background: #f58220; border: solid #ca6c18; color: #fff; 
                  border-width: 1px 1px 6px 1px; padding: 15px 10px;  }
         #intro-action button:hover { background: #ff5200; border: solid #df4800; border-width: 1px 1px 6px 1px; cursor: pointer; }
